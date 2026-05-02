@@ -1,0 +1,23 @@
+# Ruby
+*.gem
+*.rbc
+*.rb.class
+.ruby-version
+.ruby-gemset
+Gemfile.lock
+.bundle/
+vendor/bundle/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# OS
+Thumbs.db
+.env
+.env.local
+
