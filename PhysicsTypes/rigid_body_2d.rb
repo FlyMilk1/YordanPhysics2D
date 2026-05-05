@@ -3,9 +3,9 @@
 require_relative 'vector2'
 
 class RigidBody2d
-  attr_accessor :mass, :velocity, :acceleration, :angular_velocity, :angular_acceleration, :position, :rotation
+  attr_accessor :mass, :velocity, :acceleration, :angular_velocity, :angular_acceleration, :position, :rotation, :drag
 
-  def initialize(mass, position, rotation)
+  def initialize(mass, position, rotation, drag = 0.0)
     @mass = mass
     @velocity = Vector2.new(0, 0)
     @acceleration = Vector2.new(0, 0)
@@ -13,7 +13,7 @@ class RigidBody2d
     @angular_acceleration = 0.0
     @position = position
     @rotation = rotation
-    @drag = 0.0
+    @drag = drag
   end
 
   def update(time_step)
