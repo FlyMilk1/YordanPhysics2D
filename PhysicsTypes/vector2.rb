@@ -183,3 +183,4 @@ class Vector2
     @y /= scalar
   end
 end
+
